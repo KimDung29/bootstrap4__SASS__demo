@@ -1,0 +1,163 @@
+@import "./normalize";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+$color_white: #fff;
+$color_green: green;
+
+$ts: all 0.2s;
+$sf: scale(1.2);
+
+$translate: translate(-50%, -50%);
+
+$shadow: 0 0 20px rgb(50, 90, 224);
+
+.icon {
+    font-size: 20px;
+    padding: 5px;
+}
+
+//  ========= NAV BAR =========
+.navbar {
+  z-index: 10;
+  a {
+    text-decoration: none;
+    color: $color_white;
+  }
+  &__item {
+    margin: 0 5px;
+  }
+  &__menu{
+    display: none;
+  }
+}
+// ========== SLIDE MENU =======
+.sidleMenu {
+    color: $color_white;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    transition: $sf;
+
+    &__content {
+      padding: 20px;
+      .fa-times {
+        font-size: 25px;
+        cursor: pointer;
+      }
+      a {
+        color: $color_white;
+        display: block;
+        padding: 5px;
+      }
+    }
+}
+// ========== START SOMETHING =====
+.startSomething {
+  margin-top: 38px;
+  height: calc(100vh - 38px);
+  width: 100%;
+  background-image: url(../access/images/background-heroSection.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color_white;
+  &__list{
+    top: 50%;
+    left: 50%;
+    transform: $translate; 
+    div .p1{
+      font-size: 25px;
+      word-spacing: 5px;
+    }
+  }
+  .learnMore {
+    transition: $ts;
+    &__Btn {
+      box-shadow: $shadow;
+    }
+  }
+  .show__effect{
+    transform: $sf;
+  }
+  &__icon{
+    a {
+      color: $color_white; 
+      padding: 5px;     
+    }
+    top: 85%;
+  }
+}
+
+// ========== COMMON - ABOUT COMPANY ===
+.bigIcon {
+  font-size: 35px;
+}
+.common {
+ .commonTitle {
+  .p1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .p2{
+    font-weight: 500;
+  }
+ }
+ .commonList {
+  .items {
+    div .p1 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+// ========== WE KNOW - OUR WORK ==========
+.weKnow__img {
+  border-radius: 15px;
+}
+.ourWork{
+  .ourWork {
+    &__img{
+       transition: $ts;
+       border-radius: 10px;
+       display: block;
+    }
+    &__img:hover{
+     transform: scale(1.05);
+    }
+  }
+}
+}
+// ========== FOOTER ==========
+.footer{ 
+  color: $color_white;
+  &__top {
+    font-size: 25px;
+  }
+  &__icon{
+    a{
+      width: 35px;
+      height: 35px;
+      background-color: $color_green;
+      color: $color_white;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      line-height: auto;
+      display: inline-flex;
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 768px) {
+  .navbar {
+    &__right {
+      display: none;
+    }
+    &__menu {
+      display: block;
+    }
+  }
+}

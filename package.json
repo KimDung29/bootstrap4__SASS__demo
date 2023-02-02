@@ -1,0 +1,15 @@
+{
+  "name": "html-css-front-end-essential-practice.web.app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+   "compile": "sass --watch --no-source-map ./sass/style.scss ./css/style.css"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "sass": "^1.57.1"
+  }
+}

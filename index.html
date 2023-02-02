@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bootstrap4 & SASS</title>
+  </head>
+  <body>
+    <div class="section">
+      <!-- NAV BAR -->
+      <div class="navbar navbar-dark bg-dark fixed-top w-100 text-uppercase">
+        <div class="">
+          <a href="#" class="">
+            <i class="fas fa-laptop icon"></i>
+            logo
+          </a>
+        </div>
+        <div class="navbar__right">
+          <a href="#" class="navbar__item">
+            <i class="fas fa-info icon"></i>
+            about
+          </a>
+          <a href="#" class="navbar__item">
+            <i class="fas fa-user-alt icon"></i>
+            team
+          </a>
+          <a href="#" class="navbar__item">
+            <i class="fas fa-th icon"></i>
+            work
+          </a>
+          <a href="#" class="navbar__item">
+            <i class="far fa-envelope icon"></i>
+            contact
+          </a>
+        </div>
+        <a href="#" class="navbar__menu">
+          menu
+          <i class="fas fa-bars icon"></i>
+        </a>
+      </div>
+      <!-- SIDE MENU -->
+      <div class="sidleMenu bg-dark text-left position-fixed">
+        <div class="sidleMenu__content text-capitalize">
+          <i class="fas fa-times d-block mb-2"></i>
+          <a href="#">
+            <i class="icon fas fa-info"></i>
+            about
+          </a>
+          <a href="#">
+            <i class="icon fas fa-user-alt"></i>
+            team
+          </a>
+          <a href="#">
+            <i class="icon fas fa-th"></i>
+            work
+          </a>
+          <a href="#">
+            <i class="icon far fa-envelope"></i>
+            contact
+          </a>
+        </div>
+      </div>
+
+      <!-- START SOMETHING -->
+      <div id="top" class="startSomething position-relative text-center">
+        <div class="startSomething__list position-absolute w-75">
+          <div>
+            <p class="p1 text-uppercase">Start something that matters</p>
+            <p class="text-uppercase">
+              Stop wasting valuable time with projects that just isn't you.
+            </p>
+
+            <div class="learnMore mt-5">
+              <button
+                class="learnMore__Btn btn btn-light text-uppercase rounded"
+              >
+                Learn more and start today
+              </button>
+            </div>
+          </div>
+          <div class="mt-5 startSomething__icon position-absolute">
+            <a href="#"><i class="fab fa-facebook-square icon__change"></i></a>
+            <a href="#"> <i class="fab fa-instagram icon__change"></i> </a>
+            <a href="#">
+              <i class="fab fa-snapchat-square icon__change"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest-square icon__change"></i>
+            </a>
+            <a href="#"> <i class="fab fa-twitter-square icon__change"></i> </a>
+            <a href="#"> <i class="fab fa-linkedin-in icon__change"></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT COMPANY -->
+      <div class="common text-center mt-5 mb-5">
+        <div class="commonTitle text-uppercase mb-3">
+          <p class="p1">About the company</p>
+          <p class="p2">Key features of our company</p>
+        </div>
+        <div class="commonList d-flex flex-wrap">
+          <div class="mt-5 col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-desktop bigIcon"></i>
+            <p class="p1">Responsive</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              cupiditate tempora nemo laboriosam architecto voluptatem iste
+              exercitationem rerum repellat qui fuga quos nam possimus id
+            </p>
+          </div>
+          <div class="mt-5 col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-heart bigIcon"></i>
+            <p class="p1">Responsive</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              cupiditate tempora nemo laboriosam architecto voluptatem iste
+              exercitationem rerum repellat qui fuga quos nam possimus id
+            </p>
+          </div>
+          <div class="mt-5 col-sm-12 col-md-6 col-lg-3">
+            <i class="far fa-gem bigIcon"></i>
+            <p class="p1">Responsive</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              cupiditate tempora nemo laboriosam architecto voluptatem iste
+              exercitationem rerum repellat qui fuga quos nam possimus id
+            </p>
+          </div>
+          <div class="mt-5 col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-cog bigIcon"></i>
+            <p class="p1">Responsive</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa,
+              cupiditate tempora nemo laboriosam architecto voluptatem iste
+              exercitationem rerum repellat qui fuga quos nam possimus id
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WE KNOW -->
+      <div
+        class="common p-lg-5 text-center mt-5 mb-5 d-md-flex align-content-between justify-content-center"
+      >
+        <div
+          class="commonTitle text-uppercase align-self-md-center col-sm-11 col-md-6 col-lg-6"
+        >
+          <div>
+            <p class="p1">We know design.</p>
+            <p class="text-capitalize">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae, mollitia?
+            </p>
+            <button class="btn btn-dark text-capitalize">
+              <i class="fas fa-th"></i>
+              view our works
+            </button>
+          </div>
+        </div>
+
+        <div class="col-sm-11 col-md-6 col-lg-6 m-sm-auto pt-sm-4">
+          <img
+            class="weKnow__img w-100 h-100"
+            src="./access/images/phone_buildings.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!--  OUR WORK -->
+      <div class="common text-center mt-5 mb-5">
+        <div class="commonTitle text-uppercase mb-5">
+          <p class="p1">Our work</p>
+          <p class="p2">What we've done for people</p>
+        </div>
+        <div
+          class="ourWork d-flex flex-wrap align-items-center justify-content-center w-100 m-0 p-0"
+        >
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/1-tech_camera.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/2-tech_drone.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/3-tech_mic.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/4-tech_phone.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/5-tech_sound.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/6-tech_tablet.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/7-tech_tableturner.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-sm-11 col-md-6 col-lg-3">
+            <img
+              class="ourWork__img w-100 h-100 p-md-1 pt-lg-1 p-sm-3"
+              src="./access/images/8-tech_typewriter.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="common text-center mt-5 mb-5 w-100">
+        <div class="commonTitle mb-5">
+          <p class="p1 text-uppercase">Contact</p>
+          <p class="">Lets get in touch. Send us a messages:</p>
+        </div>
+        <div class="p-3 d-flex flex-wrap m-sm-auto text-left">
+          <div class="m-sm-auto col-sm-11 col-md-3">
+            <p>
+              <i class="fas fa-map-marker-alt middleIcon"></i>
+              Chicago, US
+            </p>
+            <p>
+              <i class="fas fa-phone middleIcon"></i>
+              Phone: <a href="tel:+00151515 "> +00 151515</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope middleIcon"></i> Email:<a
+                href="mailto:myemail@gmail.com"
+              >
+                myemail@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="m-sm-auto col-sm-11 col-md-9">
+            <form class="" action="#">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Email" />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Subject" />
+              </div>
+              <div>
+                <textarea
+                  class="col-12"
+                  name="Message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                >
+                  Message
+                </textarea>
+              </div>
+            </form>
+            <button class="btn btn-primary" type="submit">
+              <i class="fab fa-telegram-plane"></i>
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==== MAP ==== -->
+      <div>
+        <img class="img-fluid" src="./access/images/map.jpg" alt="" />
+      </div>
+
+      <!-- ======= FOOTER===== -->
+      <div class="footer bg-dark text-center p-5">
+        <a class="footer__top p-3" href="#top">
+          <i class="fas fa-arrow-up"></i>
+          To the top</a
+        >
+        <div class="footer__icon m-3">
+          <a href="#"> <i class="fab fa-facebook-square"></i></a>
+          <a href="#"> <i class="fab fa-instagram"></i></a>
+          <a href="#"> <i class="fab fa-snapchat-square"></i> </a>
+          <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
+          <a href="#"> <i class="fab fa-twitter-square"></i> </a>
+          <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+        </div>
+        <p class="footer__p"></p>
+        <p class="currentTime"></p>
+        <p class="currentDate"></p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
